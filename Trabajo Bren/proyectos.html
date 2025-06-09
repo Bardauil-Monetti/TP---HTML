@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- esto es para que la pantalla se adapte al dispositivo. -->
+    <title>Mewtronics - Tech&Cats</title>
+    <link rel="stylesheet" href="proyectosdiseño.css"> <!-- linkeamos el archivo css -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet" />
+  </head>
+<body>
+
+    <header>
+          <div class="logo-titulo">
+        <img src="56_sin_titulo_20240808163357.png" alt="Logo Mewtronics">
+        <h1>MEWTRONICS</h1>
+          </div>
+        <nav> <!-- se usa para separar enlaces de navegacion, por eso no se usa div. se ponen menus principales, barras de navegacion, etc -->
+            <a style="text-decoration:none" href="home.html" >Inicio</a>
+            <a style="text-decoration:none" href="proyectos.html">Proyectos</a>
+            <a style="text-decoration:none" href="nosotros.html">Nosotros</a>
+            <a style="text-decoration:none" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+  <main>
+    <h2 class="titulo-seccion">Nuestros Proyectos</h2>
+
+    <section class="proyecto decorativo derecha">
+
+      <div class="imagen">
+        <img src="https://media.discordapp.net/attachments/1060741172546523147/1376191405256609802/image.png?ex=68346d9f&is=68331c1f&hm=113231a3340ecdb5308b898cd833fde69582fa97d046a73838e9d4ce537a422a&=&format=webp&quality=lossless&width=1093&height=1006" alt="OjosAnimatronicos" />
+      </div>
+
+      <div class="texto">
+        <h3><a href="TP1 - Ojos animatronicos"> Ojos animatrónicos<a></h3>
+        <p>Carlos (el apodo que le pusimos) fue el primer proyecto de nuestro emprendimiento. La idea era utilizar nuestros conocimientos de servo motores para crear un mecanismo microcontrolado que pudiera imitar los movimientos de los ojos de animatrónicos reales. La idea de este proyecto esta fuertemente inspirada en los personajes de la popular saga de videojuegos <a href="https://es.wikipedia.org/wiki/Five_Nights_at_Freddy%27s">"Five Nights At Freddy's"</a>. Haz click <a href="TP1 - Ojos animatronicos"> aquí</a> para ver más</p>
+      </div>
+
+    </section>
+    <section class="proyecto decorativo izquierda">
+
+      <div class="texto">
+        <h3><a href="Informe_proyecto_R.A.D._feria_de_ciencias_2024_-_Mewtronics[1][1].pdf"> R.A.D.: Registro de Asistencia Digital</a></h3>
+        <p>El sistema de Registro de Asistencia Digital fue el proyecto que nos llevó hasta la Feria de Ciencias de Merlo en el año 2024, la cual fue nuestra primera competencia. Este consistia en un sistema de identificación por
+radiofrecuencia (RFID) integrado a una base de datos para registrar la entrada y
+salida de alumnos, mejorando la seguridad y garantizando una respuesta rápida en
+caso de desaparición. Haz click <a href="Informe_proyecto_R.A.D._feria_de_ciencias_2024_-_Mewtronics[1][1].pdf">aquí</a> para acceder a un documento detallado sobre este proyecto.</p>
+      </div>
+
+      <div class="imagen">
+        <img src="https://media.discordapp.net/attachments/1060741172546523147/1376189508651061408/image.png?ex=68346bdb&is=68331a5b&hm=f2b722b1c8ecb5a11dbf599fd931608db95c4f0f75ad5020208913ef8e854b72&=&format=webp&quality=lossless" alt="ProyectoRAD" />
+      </div>
+
+    </section>
+
+    
+
+    <section class="proyecto decorativo izquierda">
+      <div class="texto">
+        <h3><a href="Informe Proyecto Submarino Microcontrolado - Monatajes III - 6ºA.docx"> Dron Submarino (work in progress)</a></h3>
+        <p>Nuestro proyecto más reciente, inspirado de un videojuego llamado Subnautica, se trata de un dron submarino con la capacidad de escanear el lecho marino donde este se encuentra. El dron sera capaz de ser controlado por el usuario mediante un software especializado, atravez de tecnología BlueTooth (se esta evaluando la posibilidad de usar una pagina HTML). Este dron esta siendo diseñado para ser multiproposito, por lo que será apto para aplicaciones cientificas, patrulla, seguridad o incluso para espionaje! Haz click <a href="Informe_proyecto_R.A.D._feria_de_ciencias_2024_-_Mewtronics[1][1].pdf">aquí</a> para acceder a un documento detallado sobre este proyecto.</p>
+      </div>
+      <div class="imagen">
+        <img src="cyclops.jpeg" alt="Cyclops subnautica" />
+      </div>
+    </section>
+
+<section id="overlay">
+      
+    </div>   
+    <hr>
+    
+      <form action="Resultado votacion.html" method="POST">
+        <style>
+          a { color: rgb(253, 230, 230); }
+          </style>
+             
+        <section class="votacion">
+          <label for="votacion">Vota por el mejor proyecto de Mewtronics!</label>
+          <select name="votacion" id="votacion">
+            <option value="Ojos">Ojos Animatrónicos</option>
+            <option value="RAD">R.A.D.: Registro de Asistencia Digital</option>
+            <option value="Cyclops">Dron Submarino</option>
+            <input type="submit" value="Enviar">
+          </select>
+        </section>
+        
+        
+        <hr>
+
+        
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mewtronics. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

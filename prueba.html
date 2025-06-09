@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Input de Checklist</title>
+  <meta charset="UTF-8">
+  <title>Contador de Visitas</title>
 </head>
 <body>
-    <input type="checkbox" name="intereses" value="deportes"> Deportes<br>
-    <input type="checkbox" name="intereses" value="musica"> Música<br>
-    <input type="checkbox" name="intereses" value="cine"> Cine<br>
+  <h1>Bienvenido</h1>
+  <p>Has visitado esta página <span id="contador">0</span> veces.</p>
+
+  <script>
+    // Obtener el contador actual desde localStorage
+    let visitas = localStorage.getItem("contadorVisitas");
+
+    if (visitas === null) {
+      visitas = 1; // Primera visita
+    } else {
+      visitas = parseInt(visitas) + 1; // Sumar una visita
+    }
+
+    // Guardar el nuevo valor en localStorage
+    localStorage.setItem("contadorVisitas", visitas);
+
+    // Mostrar el valor en la página
+    document.getElementById("contador").textContent = visitas;
+  </script>
 </body>
 </html>

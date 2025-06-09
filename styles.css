@@ -6,14 +6,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+
 }
 
-{
-    <background-image <url:(descargas/Diseño sin titulo.png)>>
-    <background-size contain>
+body {
+    background-color: #000;
+    background-image: url('Diseño sin titulo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
+
 header {
     width: 100%;
     padding: 20px;
@@ -71,7 +74,7 @@ main {
     max-width: 800px;
 }
 
-.welcome, .about, .counter, .notifications {
+.welcome, .about, .counter, .notifications, .articulo, .miembros{
     margin: 20px 0;
     padding: 30px;
     background: rgba(255, 255, 255, 0.1);
@@ -79,12 +82,12 @@ main {
     border-radius: 20px;
 }
 
-.welcome h2, .about h2, .counter h2, .notifications h2{
+.welcome h2, .about h2, .counter h2, .notifications h2, .articulo h2, .miembros h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.welcome p, .about p, .counter p, .notifications p {
+.welcome p, .about p, .counter p, .notifications p, .articulo p, .miembros p {
     font-size: 1.2em;
     line-height: 1.5;
 }
