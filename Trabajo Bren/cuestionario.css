@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+     background:
+        linear-gradient(rgba(8, 8, 8, 0.95), rgba(8, 8, 8, 0.95)),
+        url("https://media.discordapp.net/attachments/1331802657764933784/1381323047734345800/Diseno_sin_titulo_1.png?ex=684718d6&is=6845c756&hm=7641ef56fd9b01e0c271fb74932cb28095fc8a41cec8dd617b2a49634f49d6cc&=&format=webp&quality=lossless") repeat;
+    background-size: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg, #111, #000);
+     box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-transform: uppercase; /* */
+    color: #fff;
+    text-shadow: 
+        0 0 6px #0ff,
+        0 0 12px #0ff;
+    animation: neon 1.5s infinite alternate; /* */
+}
+
+@keyframes neon { 
+    from {
+        text-shadow: 0 0 4px #0ff, 0 0 10px rgb(0, 217, 255);
+    }
+    to {
+        text-shadow: 0 0 4px #b880f7, 0 0 12px #b740fc;
+    }
+} /* */
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.4em;
+    transition: color 0.5s, text-shadow 0.5s; /* */
+}
+
+nav a:hover {
+    color: #c4e0ff91;
+    text-shadow:
+        0 0 4px #24ecf3,
+        0 0 8px #9333ea;
+    animation: neon 2s infinite alternate; 
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo-titulo img {
+    height: 100px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(114, 250, 250, 0.705));
+}
+
+.cuestionario-container h2{
+    text-align: center;
+}
+
+.cuestionario-container {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 30px;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2), 0 0 40px rgba(138,43,226,0.3);
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.pregunta {
+  margin-bottom: 45px;
+
+}
+input[type="submit"] {
+  display: inline-block;
+  margin: 20px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #0ff;
+  border-radius: 16px;
+  box-shadow: 0 0 15px #0ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #0ff;
+  color: #000;
+  box-shadow: 0 0 25px #0ff, 0 0 40px #9333ea;
+}
+
+
+#resultado {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #a0f0ff;
+  text-shadow: 0 0 8px #0ff;
+}

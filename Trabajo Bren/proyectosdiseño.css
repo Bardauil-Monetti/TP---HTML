@@ -1,5 +1,5 @@
-
 body {
+
     margin: 0;
     font-family: 'Orbitron', sans-serif;
     background-color: #000;
@@ -7,9 +7,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+     background:
+        linear-gradient(rgba(8, 8, 8, 0.95), rgba(8, 8, 8, 0.95)),
+        url("https://media.discordapp.net/attachments/1331802657764933784/1381323047734345800/Diseno_sin_titulo_1.png?ex=684718d6&is=6845c756&hm=7641ef56fd9b01e0c271fb74932cb28095fc8a41cec8dd617b2a49634f49d6cc&=&format=webp&quality=lossless") repeat;
+    display: flex;
     justify-content: center;
-    min-height: 100vh;
-    background: radial-gradient(circle at top left, #0a0a0a, #000); /* */
+    padding-top: 70px;
+
 }
 
 
@@ -19,6 +23,87 @@ header {
   background: linear-gradient(45deg, #111, #000);
   box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
   text-align: center;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 40px auto;
+  max-width: 800px;
+  background-color: #0a0a0a;
+  border: 2px solid #00ffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00ffffaa;
+  position: relative;
+}
+.puntos
+
+.carrusel .imagenes {
+  width: 600px;
+  max-width: 100vw;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+
+.carrusel-img {
+  width: 100%;
+  height: 100%;
+  max-height: 20%;
+  object-fit: contain;
+  display: none;
+  border-radius: 12px;
+  transition: opacity 0.6s ease-in-out;
+  box-shadow: 0 0 10px #00ffff80;
+}
+
+.carrusel-img.activa {
+  display: block;
+}
+
+.atras img,
+.siguiente img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 5px #00ffff);
+}
+
+.atras img:hover,
+.siguiente img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #00ffff);
+}
+#ojos img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2), 0 0 40px rgba(138,43,226,0.3);
+  filter: brightness(1.05) contrast(1.1);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .carrusel {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .carrusel .imagenes {
+    width: 100%;
+    height: auto;
+  }
+
+  .carrusel-img {
+    height: auto;
+  }
 }
 
 .logo-titulo {
@@ -84,7 +169,7 @@ nav a:hover {
   text-shadow: 0 0 6px #a855f7, 0 0 10px #9333ea; /*  */
 }
 
-/* secciones de proyectos */
+
 .proyecto {
   display: flex;
   align-items: center;
@@ -137,6 +222,8 @@ nav a:hover {
   filter: brightness(1.05) contrast(1.1);
   transition: transform 0.3s ease;
 }
+
+
 
 .proyecto .imagen img:hover {
   transform: scale(1.03);

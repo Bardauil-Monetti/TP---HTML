@@ -17,12 +17,33 @@
         <nav> <!-- se usa para separar enlaces de navegacion, por eso no se usa div. se ponen menus principales, barras de navegacion, etc -->
             <a style="text-decoration:none" href="home.html" >Inicio</a>
             <a style="text-decoration:none" href="proyectos.html">Proyectos</a>
+            <a style="text-decoration:none" href="novedades.html">Novedades</a>
             <a style="text-decoration:none" href="nosotros.html">Nosotros</a>
             <a style="text-decoration:none" href="contacto.html">Contacto</a>
         </nav>
     </header>
   <main>
     <h2 class="titulo-seccion">Nuestros Proyectos</h2>
+
+
+    <div class="carrusel">
+      <div class="atras">
+        <img id="atras" src="anterior.png" alt="imagen anterior" loading="lazy"/>
+      </div> 
+      <div class="imagenes">
+        <div id="ojos"></div>
+        <div id="puntos"></div>
+      </div>
+    <div class="siguiente">
+      <img id="adelante" src="siguiente.png" alt="imagen siguiente" loading="lazy"/>
+    </div>
+    
+    </div>
+    <script src="proyectos.js"></script>
+
+
+
+
 
     <section class="proyecto decorativo derecha">
 
@@ -31,7 +52,7 @@
       </div>
 
       <div class="texto">
-        <h3><a href="TP1 - Ojos animatronicos"> Ojos animatrónicos<a></h3>
+        <h3> Ojos animatrónicos</h3>
         <p>Carlos (el apodo que le pusimos) fue el primer proyecto de nuestro emprendimiento. La idea era utilizar nuestros conocimientos de servo motores para crear un mecanismo microcontrolado que pudiera imitar los movimientos de los ojos de animatrónicos reales. La idea de este proyecto esta fuertemente inspirada en los personajes de la popular saga de videojuegos <a href="https://es.wikipedia.org/wiki/Five_Nights_at_Freddy%27s">"Five Nights At Freddy's"</a>. Haz click <a href="TP1 - Ojos animatronicos"> aquí</a> para ver más</p>
       </div>
 
@@ -39,11 +60,11 @@
     <section class="proyecto decorativo izquierda">
 
       <div class="texto">
-        <h3><a href="Informe_proyecto_R.A.D._feria_de_ciencias_2024_-_Mewtronics[1][1].pdf"> R.A.D.: Registro de Asistencia Digital</a></h3>
+        <h3>   R.A.D.: Registro de Asistencia Digital</h3>
         <p>El sistema de Registro de Asistencia Digital fue el proyecto que nos llevó hasta la Feria de Ciencias de Merlo en el año 2024, la cual fue nuestra primera competencia. Este consistia en un sistema de identificación por
 radiofrecuencia (RFID) integrado a una base de datos para registrar la entrada y
 salida de alumnos, mejorando la seguridad y garantizando una respuesta rápida en
-caso de desaparición. Haz click <a href="Informe_proyecto_R.A.D._feria_de_ciencias_2024_-_Mewtronics[1][1].pdf">aquí</a> para acceder a un documento detallado sobre este proyecto.</p>
+caso de desaparición. Haz click <a href="Informe_proyecto_R.A.D.feria_de_ciencias_2024-_Mewtronics[1][1].pdf">aquí</a> para acceder a un documento detallado sobre este proyecto.</p>
       </div>
 
       <div class="imagen">
@@ -56,8 +77,8 @@ caso de desaparición. Haz click <a href="Informe_proyecto_R.A.D._feria_de_cienc
 
     <section class="proyecto decorativo izquierda">
       <div class="texto">
-        <h3><a href="Informe Proyecto Submarino Microcontrolado - Monatajes III - 6ºA.docx"> Dron Submarino (work in progress)</a></h3>
-        <p>Nuestro proyecto más reciente, inspirado de un videojuego llamado Subnautica, se trata de un dron submarino con la capacidad de escanear el lecho marino donde este se encuentra. El dron sera capaz de ser controlado por el usuario mediante un software especializado, atravez de tecnología BlueTooth (se esta evaluando la posibilidad de usar una pagina HTML). Este dron esta siendo diseñado para ser multiproposito, por lo que será apto para aplicaciones cientificas, patrulla, seguridad o incluso para espionaje! Haz click <a href="Informe_proyecto_R.A.D._feria_de_ciencias_2024_-_Mewtronics[1][1].pdf">aquí</a> para acceder a un documento detallado sobre este proyecto.</p>
+        <h3> Dron Submarino (work in progress)</h3>
+        <p>Nuestro proyecto más reciente, inspirado de un videojuego llamado Subnautica, se trata de un dron submarino con la capacidad de escanear el lecho marino donde este se encuentra. El dron sera capaz de ser controlado por el usuario mediante un software especializado, atravez de tecnología BlueTooth (se esta evaluando la posibilidad de usar una pagina HTML). Este dron esta siendo diseñado para ser multiproposito, por lo que será apto para aplicaciones cientificas, patrulla, seguridad o incluso para espionaje! Haz click <a href="Informe_proyecto_R.A.D.feria_de_ciencias_2024-_Mewtronics[1][1].pdf">aquí</a> para acceder a un documento detallado sobre este proyecto.</p>
       </div>
       <div class="imagen">
         <img src="cyclops.jpeg" alt="Cyclops subnautica" />
@@ -67,31 +88,21 @@ caso de desaparición. Haz click <a href="Informe_proyecto_R.A.D._feria_de_cienc
 <section id="overlay">
       
     </div>   
-    <hr>
-    
-      <form action="Resultado votacion.html" method="POST">
-        <style>
-          a { color: rgb(253, 230, 230); }
-          </style>
-             
-        <section class="votacion">
-          <label for="votacion">Vota por el mejor proyecto de Mewtronics!</label>
-          <select name="votacion" id="votacion">
-            <option value="Ojos">Ojos Animatrónicos</option>
-            <option value="RAD">R.A.D.: Registro de Asistencia Digital</option>
-            <option value="Cyclops">Dron Submarino</option>
-            <input type="submit" value="Enviar">
-          </select>
-        </section>
-        
-        
-        <hr>
-
-        
-      </form>
-    </section>
-
   </main>
+
+<section class="votacion-container">
+  <h3>📊 ¡Vota por tu proyecto favorito de Mewtronics!</h3>
+  <form action="resultados.html" method="POST" class="formulario-votacion">
+    <label for="votacion">Selecciona un proyecto:</label>
+    <select name="votacion" id="votacion">
+      <option value="Ojos">👁 Ojos Animatrónicos</option>
+      <option value="RAD">📡 R.A.D.: Registro de Asistencia Digital</option>
+      <option value="Cyclops">🌊 Dron Submarino</option>
+    </select>
+    <input type="submit" value="Enviar voto">
+  </form>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Mewtronics. Todos los derechos reservados.</p>

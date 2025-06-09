@@ -8,7 +8,12 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: radial-gradient(circle at top left, #0a0a0a, #000); /* */
+     background:
+        linear-gradient(rgba(8, 8, 8, 0.95), rgba(8, 8, 8, 0.95)),
+        url("https://media.discordapp.net/attachments/1331802657764933784/1381323047734345800/Diseno_sin_titulo_1.png?ex=684718d6&is=6845c756&hm=7641ef56fd9b01e0c271fb74932cb28095fc8a41cec8dd617b2a49634f49d6cc&=&format=webp&quality=lossless") repeat;
+    background-size: 1000px;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
@@ -112,7 +117,7 @@ main {
   color: #fff;
   text-decoration: none;
   border: 2px solid #0ff;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 0 15px #0ff;
   transition: all 0.3s ease;
   background-color: rgba(0, 0, 0, 0.5);

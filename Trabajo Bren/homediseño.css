@@ -1,4 +1,10 @@
 body {
+    background:
+    linear-gradient(rgba(8, 8, 8, 0.95), rgba(8, 8, 15, 0.95)),
+    url("fondo.png") repeat;
+    background-size: 1000px;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     font-family: 'Orbitron', sans-serif;
     background-color: #000;
@@ -8,7 +14,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: radial-gradient(circle at top left, #0a0a0a, #000); /* */
+   
 }
 
 header {
@@ -79,7 +85,7 @@ main {
     filter: drop-shadow(0 0 10px rgba(114, 250, 250, 0.705));
 }
 
-.welcome, .about, .counter, .notifications {
+.welcome, .about {
     margin: 20px 0;
     padding: 30px;
     background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); /* */
@@ -89,17 +95,36 @@ main {
 
 }
 
-.welcome h2, .about h2, .counter h2, .notifications h2 {
+.welcome h2, .about h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #dbbafc98;
     text-shadow: 0 0 6px #a855f7, 0 0 10px #9333ea; /*  */
 }
 
-.welcome p, .about p, .counter p, .notifications p {
+.welcome p, .about p {
     font-size: 1.2em;
     line-height: 1.6;
     color: #e0e0e0;
+}
+
+.contador-visitas {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  box-shadow: 0 0 25px rgba(0,255,255,0.15), 0 0 40px rgba(138,43,226,0.2);
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.contador-visitas {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.4em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 8px #0ff, 0 0 12px #9333ea;
 }
 
 /* Línea decorativa en el footer */

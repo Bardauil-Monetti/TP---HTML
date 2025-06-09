@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- esto es para que la pantalla se adapte al dispositivo. -->
+    <title>Mewtronics - Tech&Cats</title>
+    <link rel="stylesheet" href="novedades.css"> <!-- linkeamos el archivo css -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+
+          <div class="logo-titulo">
+        <img src="56_sin_titulo_20240808163357.png" alt="Logo Mewtronics">
+        <h1>Mewtronics</h1>
+          </div>
+
+        <nav> <!-- se usa para separar enlaces de navegacion, por eso no se usa div. se ponen menus principales, barras de navegacion, etc -->
+            <a style="text-decoration:none" href="home.html" >Inicio</a>
+            <a style="text-decoration:none" href="proyectos.html">Proyectos</a>
+            <a style="text-decoration:none" href="novedades.html">Novedades</a>
+            <a style="text-decoration:none" href="nosotros.html">Nosotros</a>
+            <a style="text-decoration:none" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="noticia de la semana" id="noticia-semana">
+
+      
+        <h3>   📰 Adiós a Skype</h3>
+        <p>📌 ﹕ Microsoft ha anunciado el cierre definitivo de los servidores de Skype, marcando el fin de una era para una de las plataformas de videollamadas más icónicas. Tras años de declive frente a competidores como Zoom y Discord, la compañía ha decidido enfocar sus esfuerzos en otras soluciones de comunicación más modernas.
+        </p>
+      
+
+      <div class="imagen">
+        <img src="noticia.jpg" alt="ProyectoRAD" />
+      </div>
+
+    </section>
+
+               
+
+
+
+<section class="notifications" id="notifications">
+            <h2>¡Mantenete al tanto de nuestras novedades!</h2>
+            <form id="form-notificaciones">
+                <input type="mail" id="mail" name="mail"
+                placeholder="Ingresa tu email acá" required minlenght="8"
+                maxlenght="25" >
+                <input type="submit" value="Enviar">
+                <p>
+                <input type="checkbox" name="colegio o no" value="Sos del colegio? (ITISJT)">Sos del colegio? (ITISJT)<br>
+                </p>
+            </form>
+</section>
+
+
+
+<script>
+  let sub = document.getElementById("form-notificaciones");
+
+
+  sub.addEventListener("submit", function (e) {
+    e.preventDefault(); // evita que se recargue la página
+    const email = document.getElementById("mail").value;
+    if (email.length >= 8 && email.length <= 25) {
+        alert(`✅ ¡Gracias por suscribirte, ${email}!`);
+    } else {
+        alert("❌ El email debe tener entre 8 y 25 caracteres.");
+    }
+  });
+</script>
+
+
+
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Mewtronics. Todos los derechos reservados.</p> <!-- &copy es el cosito de copyright -->
+    </footer>
+
+</body>
+
+
+</html>

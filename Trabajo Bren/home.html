@@ -19,6 +19,7 @@
         <nav> <!-- se usa para separar enlaces de navegacion, por eso no se usa div. se ponen menus principales, barras de navegacion, etc -->
             <a style="text-decoration:none" href="home.html" >Inicio</a>
             <a style="text-decoration:none" href="proyectos.html">Proyectos</a>
+            <a style="text-decoration:none" href="novedades.html">Novedades</a>
             <a style="text-decoration:none" href="nosotros.html">Nosotros</a>
             <a style="text-decoration:none" href="contacto.html">Contacto</a>
         </nav>
@@ -36,22 +37,38 @@
             <p>Nuestro equipo está formado por estudiantes que trabajan juntos en el día a día para desarrollar soluciones innovadoras y seguras. Creemos en un futuro donde la tecnología y el amor se unen para modernizar con maquinaria única y positiva.</p>
         </section>
 
-                </section>
-        <section class="counter">
-            <h2>Contador de visitas</h2>
-            <div class="counter">Visitas: 48</div>
+               </section>
+<section class="contador-visitas">
+  <h2>Contador de visitas</h2>
+  <div>Esta es tu visita Nº <span id="counter">0</span></div>
+</section>
 
-        </section>
-        <section class="notifications">
-            <h2>¡Mantenete al tanto de nuestras novedades!</h2>
-            <input type="mail" id="mail" name="mail"
-            placeholder="Ingresa tu email acá" required minlenght="8"
-            maxlenght="25" >
-            <input type="submit" value="Enviar">
-            <p>
-            <input type="checkbox" name="colegio o no" value="Sos del colegio? (ITISJT)">Sos del colegio? (ITISJT)<br>
-            </p>
-        </section>
+<script>
+  // Obtener el contador actual desde localStorage
+  let visitas = localStorage.getItem("contadorVisitas");
+
+  if (visitas === null) {
+    visitas = 1; // Primera visita
+  } else {
+    visitas = parseInt(visitas) + 1; // Sumar una visita
+  }
+
+  // Guardar el nuevo valor en localStorage
+  localStorage.setItem("contadorVisitas", visitas);
+
+  // Mostrar el valor en la página
+  document.getElementById("counter").textContent = visitas;
+</script>
+
+
+<section class="cuestionario-boton">
+    <h3> ¿Querés ponerte a prueba con tus conocmientos de electrónica?</h3>
+    <a href="cuestionario.html"> Ir al Cuesionario </a>
+
+</section>
+
+
+
     </main>
 
 
